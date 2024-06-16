@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rotate and Score Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="score-counter">Score: 0</div>
+    <div id="score-per-second">Score per second: 0</div>
+    <div id="level-indicator">
+        <span id="current-level">Level 1</span>
+        <span id="score-needed">Score needed: 2000</span>
+        <button id="upgrade-button" disabled>Upgrade</button>
+    </div>
+    <div id="game-area">
+        <img id="rotate-image" src="images/level1.png" alt="Level Image">
+    </div>
+    <div id="stress-level" class="stress-level">Stress Level: 0</div>
+    <div id="warning-message" class="warning-message"></div>
+    <script src="script.js"></script>
+</body>
+</html>

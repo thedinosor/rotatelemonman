@@ -1,0 +1,95 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    position: relative;
+}
+
+#score-counter, #score-per-second, #stress-level {
+    font-size: 2em;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+#score-per-second, #stress-level {
+    position: absolute;
+    top: 20px;
+}
+
+#score-per-second {
+    left: 20px;
+    color: #333;
+}
+
+#stress-level {
+    right: 20px;
+}
+
+#level-indicator {
+    position: fixed;
+    bottom: 20%;
+    left: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+    padding: 20px;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+#level-indicator span {
+    margin-bottom: 10px;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+#upgrade-button {
+    padding: 10px 20px;
+    font-size: 1em;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#upgrade-button:disabled {
+    background-color: #ddd;
+    cursor: not-allowed;
+}
+
+#game-area {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 60%;
+}
+
+#rotate-image {
+    width: 200px;
+    cursor: grab;
+}
+
+#rotate-image:active {
+    cursor: grabbing;
+}
+
+.warning-message {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    background-color: rgba(255, 0, 0, 0.8); /* Red background */
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    display: none; /* Hidden initially */
+    font-weight: bold;
+}
+
